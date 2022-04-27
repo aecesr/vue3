@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- saved from url=(0217)file:///C:/Users/cHL/AppData/Roaming/Tencent/WeMeet/Global/IM/file/2022-3/17843774900559494746/d1fe173d08e959397adf34b1d77e88d7/3-9%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%BB%84%E4%BB%B6%E7%9A%84%E5%88%87%E6%8D%A2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何实现组件的切换</title>
+</head>
+
+<body>
+    <div id="app"><a href="file:///C:/Users/cHL/AppData/Roaming/Tencent/WeMeet/Global/IM/file/2022-3/17843774900559494746/d1fe173d08e959397adf34b1d77e88d7/3-9%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%BB%84%E4%BB%B6%E7%9A%84%E5%88%87%E6%8D%A2.html">登录</a> <a href="file:///C:/Users/cHL/AppData/Roaming/Tencent/WeMeet/Global/IM/file/2022-3/17843774900559494746/d1fe173d08e959397adf34b1d77e88d7/3-9%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%BB%84%E4%BB%B6%E7%9A%84%E5%88%87%E6%8D%A2.html">注册</a> <h3>登录组件</h3></div>
+
+    <template id="Login"></template>
+
+    <template id="Register"></template>
+
+    <script src="./如何实现组件的切换_files/vue@2"></script>
+    <script>
+        Vue.component('Login', {
+            template: '#Login'
+        })
+
+        Vue.component('Register', {
+            template: '#Register'
+        })
+
+        const app = new Vue({
+            el: "#app",
+            data() {
+                return {
+                    isLogin: true,
+                    comName: 'Login'
+                }
+            },
+        });
+
+    </script>
+
+
+</body></html>
